@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Marks-Portfolio" content="Mark's Portfolio">
+    <meta name="description" content="A portfolio for a NYC (New York City) Web Developer. Adept in Rails/Ruby, Javascript/jQuery, HTML5, CSS/SASS and many other web or web related technologies.">
+    <title>Mark's Portfolio</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
