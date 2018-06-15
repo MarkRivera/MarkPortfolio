@@ -1,8 +1,99 @@
 @import 'variables';
 
-@media(max-width: $bp-small) {
+@media(max-width: $bp-tablet - 1) {
   .navbar {
-    height: 1rem;
+    height: 4rem;
+    padding: 1rem 0;
     background-color: $primaryColor;
+    .nav-container {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      height: 100%;
+      .nav-link {
+        display: inline-block;
+        margin: 0 1rem;
+        line-height: 64px;
+        height: 100%;
+        color: white;
+
+        .link {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.5rem;
+          a:visited {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  body {
+    background-color: #191919;
+  }
+}
+
+@media(min-width: $bp-tablet) and (max-width: $bp-desktop - 1) {
+  .navbar {
+    height: 4rem;
+    background-color: $primaryColor;
+    .nav-container {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      height: 100%;
+      .nav-link {
+        display: inline-block;
+        margin: 0 1rem;
+        line-height: 64px;
+        height: 100%;
+        color: white;
+        font-size: 2rem;
+        .link {
+          text-decoration: none;
+          color: #fff;
+          a:visited {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  body {
+    background-color: #191919;
+  }
+}
+
+@media(min-width: $bp-desktop) {
+  .navbar {
+    height: 4rem;
+    background-color: $primaryColor;
+    .nav-container {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      height: 100%;
+      .nav-link {
+        display: inline-block;
+        margin: 0 1rem;
+        line-height: 64px;
+        height: 100%;
+        color: white;
+        font-size: 2rem;
+        .link {
+          text-decoration: none;
+          color: #fff;
+          a:visited {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  body {
+    background-color: #191919;
   }
 }
