@@ -1,7 +1,8 @@
-<nav class="navbar">
-  <ul class="nav-container">
-    <li class="nav-link"> <%=link_to "Contacts", "#", class: "link" %></li>
-    <li class="nav-link"><%=link_to "Projects", "#", class: "link" %></li>
-    <li class="nav-link"><%=link_to "Resume", "#", class: "link" %></li>
-  </ul>
+<nav class="navbar" id="myTopnav">
+  <%=link_to "Contacts", "#", class: "link" %>
+  <%=link_to "Projects", "#", class: "link" %>
+  <%=link_to "Resume", "#", class: "link" %>
+  <%=link_to "javascript:void(0);", class: "icon", onclick: "myFunction()" do %>
+    <i class= "fas fa-bars"></i>
+  <% end %>
 </nav>
