@@ -5,16 +5,15 @@
     height: 100vh ;
     width: 100vw;
 
+    background-image: url(web_dev_stock_1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .placeholder {
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    text-align: center;
+  #parallax-photo {
+    width: 100vw;
+    height: 100vh;
   }
 }
