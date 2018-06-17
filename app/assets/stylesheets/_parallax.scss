@@ -2,7 +2,7 @@
 
 @media (max-width: $bp-tablet - 1) {
   .cta {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 60%;
     padding: 15px 50px;
