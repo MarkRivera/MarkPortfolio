@@ -1,16 +1,123 @@
 @import 'variables';
 
-@media (max-width: $bp-tablet - 1) {
-  .cta {
-    position: fixed;
-    top: 50%;
-    left: 60%;
-    padding: 15px 50px;
-    background-color: rgba(0,0,0,0);
-    border: 4px solid lightblue;
-    color: #fff;
+.parallax {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url(web_dev_stock_1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax-photo {
+  width: 100vw;
+  height: 100vh;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.head-title {
+  color: white;
+  position: absolute;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  word-spacing: -0.5rem;
+  top: 35%;
+  left: 30%;
+
+
+  strong {
+    font-family: 'Arimo', sans-serif;
     font-weight: bold;
-    text-shadow: 0 0 15px #000;
+  }
+}
+
+.intro {
+  position: absolute;
+  top: 30%; left: 30%;
+  color: #fff;
+}
+
+.intro-text {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+
+#f-name {
+  font-weight: bold;
+  font-size: 3rem;
+  color: $ruby;
+}
+
+.cta {
+  position: absolute;
+  bottom: 40%;
+  left: 30%;
+  padding: 15px 50px;
+  background-color: $ruby;
+  border: 4px solid $ruby;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0 0 15px #aaa;
+}
+
+
+@media (min-width: 585px) {
+  .head-title {
+    color: white;
+    position: absolute;
+    font-size: 73px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    word-spacing: -1rem;
+    top: 30%;
+    left: 20%;
+
+
+    strong {
+      font-family: 'Arimo', sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  .intro {
+    position: absolute;
+    top: 18%; left: 38%;
+    color: #fff;
+  }
+
+  .intro-text {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+
+  #f-name {
+    font-weight: bold;
+    font-size: 6rem;
+    color: $ruby;
+  }
+
+  .cta {
+    position: absolute;
+    bottom: 40%;
+    right: 20%;
+    padding: 15px 50px;
+    background-color: $ruby;
+    border: 4px solid $ruby;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 15px #aaa;
   }
 
   .parallax {
