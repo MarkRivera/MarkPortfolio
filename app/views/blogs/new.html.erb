@@ -1,1 +1,11 @@
-<h1>Insert Form here</h1>
+<div>
+  <%= form_for @blog, html: { multipart: true } do |f| %>
+    <%= f.label :image %>
+    <%= f.file_field :image %><br>
+    <%= f.label :title %><br>
+    <%= f.text_field :title, class: '' %><br>
+    <%= f.label :body %><br>
+    <%= f.cktext_area :body, class: "" %><br>
+    <%= f.submit :create %>
+  <% end %>
+</div>

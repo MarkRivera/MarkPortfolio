@@ -38,6 +38,12 @@ body {
   display: none;
 }
 
+.current_user {
+  display: inline;
+  color: #FFF;
+  position: absolute;
+}
+
 @media(max-width: $bp-tablet - 1) {
     .navbar {
       width: 100vw;

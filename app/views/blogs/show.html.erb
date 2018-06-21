@@ -1,0 +1,12 @@
+<div class="show-card">
+  <h1 class="show-title">
+    <%= @blog.title %>
+    <p class="author">Author: Mark Rivera</p>
+  </h1>
+
+  <%= image_tag @blog.image.url(:large), class: "show-image" %>
+
+  <p>
+    <%= raw @blog.body %>
+  </p>
+</div>

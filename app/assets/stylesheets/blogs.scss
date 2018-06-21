@@ -1,3 +1,60 @@
 // Place all the styles related to the Blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'variables';
+
+.center {
+  text-align: center;
+}
+
+.card {
+  font-family: 'Roboto',sans-serif;
+  background-color: $afWhite;
+  width: 90vw;
+    margin: 50px 5%;
+  padding: 20px 0;
+  .title {
+    margin-bottom: 0;
+  }
+  .title a{
+    color: $ruby;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  .title a:hover {
+    text-decoration: underline;
+  }
+  .description {
+    margin-top: 0;
+  }
+}
+
+.cover-image {
+  width: 90vw;
+}
+
+.cover-text{
+    padding-top: 15px;
+}
+
+.show-card {
+  background-color: $afWhite;
+  width: 50vw;
+  margin: 0 25%;
+  text-align: center;
+}
+
+.show-title {
+  margin: 0;
+  padding: 50px 0;
+  color: $ruby;
+}
+
+.show-image {
+  width: 50vw;
+}
+
+.author {
+  font-size: 14px;
+  margin: 0;
+}

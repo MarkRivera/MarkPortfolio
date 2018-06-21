@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root 'pages#home'
-  get 'signup' => 'admins#new'
   resources :admins
 
-  get 'blog' => 'blogs#index'
-  get 'blog/new' => 'blogs#new'
-  post 'blog/new' => 'blogs#create'
+  resources :blogs, :path => "blog"
 
   get 'login' => 'sessions#new'
   post 'login' => 'sessions#create'

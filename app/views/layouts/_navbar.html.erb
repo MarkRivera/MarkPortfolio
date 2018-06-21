@@ -2,13 +2,11 @@
   <%=link_to "About", "#", class: "link" %>
   <%=link_to "Projects", "#", class: "link" %>
   <%=link_to "Resume", "#", class: "link" %>
-  <%= link_to "Blog", blog_path, method: "Get", class: "link" %>
+  <%= link_to "Blog", blogs_path, method: "Get", class: "link" %>
   <% if current_admin %>
-    <%= current_admin.email %>
     <%= link_to "Log out", logout_path, method: "delete", class: "link" %>
   <% else %>
     <%= link_to "Login", 'login', class: "link" %>
-    <%= link_to "Signup", 'signup', class: "link" %>
   <% end %>
   <%=link_to "javascript:void(0);", class: "icon", onclick: "myFunction()" do %>
     <i class= "fas fa-bars"></i>

@@ -1,1 +1,18 @@
-<h1>I'm a blog page!</h1>
+<div class="center">
+  <% @blog.each do |blog| %>
+    <div class="card">
+      <h2 class="title">
+        <%= link_to blog.title, blog_path(blog.id) %>
+      </h2>
+
+      <h5 class="description">
+        <%= blog.created_at.to_date %>
+      </h5>
+
+      <%= image_tag blog.image.url(:large), class: "cover-image" %>
+
+      <%= content_tag(:p,  blog.body.slice(3, blog.body.length-10)<<"...", class: "cover-text") %>
+      <%= link_to "Click here to jump", blog_path(blog.id) %>
+    </div>
+  <% end %>
+</div>
