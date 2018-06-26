@@ -5,4 +5,32 @@
        The web has opened limitless possibilities and its up to me to discover them. My favorite languages to develop in are <strong>Ruby</strong> and <strong>Javascript</strong>. Keeping users interested as they browse is a main focus when I develop. I've worked with many small businesses and freelancers to create the app (or pages) they really deserve, and I can do that for you too.
     </p>
   </article>
+
+  <article id="project-container">
+    <h1> <%= image_tag "rubyIcon.png", alt: "Ruby Pointer", id: "ruby-pointer" %>Projects</h1>
+
+    <section id="cards">
+      <div class="js card">
+        <%= image_tag "", alt: "first JS project", data: {language: 'Javascript'} %>
+        <div class="info">
+          <h2>Under Construction Page</h2>
+          <p>
+            <em>Features:</em>
+            jQuery created Collision detection.
+          </p>
+        </div>
+      </div>
+
+      <div class="ruby card">
+        <%= image_tag "", alt: "first Ruby project", data: {language: 'Ruby'} %>
+        <div class="info">
+          <h2>Ruby on Rails Blog</h2>
+          <p>
+            <em>Features:</em>
+            Ruby on Rails Blog with user authentication and CRUD actions.
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
 </main>
