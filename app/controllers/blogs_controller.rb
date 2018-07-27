@@ -12,7 +12,6 @@ class BlogsController < ApplicationController
     @blog = Blog.new(blog_params)
     @blog.save
     redirect_to @blog
-    end
   end
 
   def show

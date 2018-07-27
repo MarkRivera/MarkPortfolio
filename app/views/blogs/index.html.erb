@@ -11,7 +11,7 @@
 
       <!-- Insert Blog Image Here -->
 
-      <%= content_tag(:p,  blog.body.slice(3, blog.body.length-10)<<"...", class: "cover-text") %>
+      <%= content_tag(:p,  blog.body.slice(0, blog.body.length-10)<<"...", class: "cover-text") %>
       <%= link_to "Click here to jump", blog_path(blog.id) %>
     </div>
   <% end %>
