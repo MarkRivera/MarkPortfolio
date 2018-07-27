@@ -10,9 +10,8 @@ class BlogsController < ApplicationController
 
   def create
     @blog = Blog.new(blog_params)
-    if @blog.valid?
-        @blog.save
-        redirect_to @blog
+    @blog.save
+    redirect_to @blog
     end
   end
 
@@ -32,6 +31,6 @@ class BlogsController < ApplicationController
 
   private
     def blog_params
-      params.require(:blog).permit(:title, :body, :image)
+      params.require(:blog).permit(:title, :body)
     end
 end
