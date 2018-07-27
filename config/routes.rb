@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  root 'pages#index'
   resources :admins
-
+  resources :pages, :path => "projects"
   resources :blogs, :path => "blog"
 
   get 'login' => 'sessions#new'
