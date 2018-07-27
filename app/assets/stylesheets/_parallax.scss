@@ -1,7 +1,7 @@
 @import 'variables';
 
 .parallax {
-  height: 100vh;
+  height: 50vh;
   width: 100vw;
 
   background-image: url(web_dev_stock_1.jpg);
@@ -13,7 +13,7 @@
 
 #parallax-photo {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
 }
 
 .head-title {
@@ -31,7 +31,6 @@
 
 .intro {
   width: 100vw;
-  height: 100vh;
   position: absolute;
   color: #fff;
   text-align: center;
@@ -49,7 +48,7 @@
 }
 
 .intro-margin {
-  margin-top: 300px;
+  margin-top: 150px;
 }
 
 #f-name {

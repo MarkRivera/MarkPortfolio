@@ -1,13 +1,20 @@
 <nav class="navbar" id="myTopnav">
   <%=link_to "About", "#{root_path}#about-container", class: "link" %>
+
   <%=link_to "Projects", "#{root_path}#project-container", class: "link" %>
+
   <%=link_to "Resume", "#", class: "link" %>
+
   <%= link_to "Blog", blogs_path, method: "Get", class: "link" %>
+
   <% if current_admin %>
+    <%= link_to "Create New Blog", new_blog_path, method: "Get", class: "link" %>
+    <%= link_to "Create New Project", new_project_path, method: "Get", class: "link" %>
     <%= link_to "Log out", logout_path, method: "delete", class: "link" %>
   <% else %>
     <%= link_to "Login", 'login', class: "link" %>
   <% end %>
+
   <%=link_to "javascript:void(0);", class: "icon", onclick: "myFunction()" do %>
     <i class= "fas fa-bars"></i>
   <% end %>
