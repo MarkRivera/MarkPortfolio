@@ -9,7 +9,24 @@
   <article id="project-container">
     <h1> <%= image_tag "rubyIcon.png", alt: "Ruby Pointer", id: "ruby-pointer" %>Projects</h1>
 
-    <section id="cards">
+    <% @project.each do |project| %>
+
+    <div class="project">
+      <!-- Insert Image here-->
+      <%= image_tag(project.image, style: "width: 100%; height: 50%;") %>
+      <section style="color: black">
+      <!-- Insert Title and Body Text -->
+      <p>
+        <%= project.title %>
+      </p>
+      <p>
+        <%= project.body %>
+      </p>
+      </section>
+    </div>
+    <% end %>
+
+    <!-- <section id="cards">
       <div class="js card">
         <%= image_tag "UCvideo.gif", alt: "first JS project", data: {language: 'Javascript'}, id: "uc-gif" %>
         <div class="info">
@@ -33,6 +50,6 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
   </article>
 </main>
