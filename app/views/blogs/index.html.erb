@@ -10,6 +10,7 @@
       </h5>
 
       <!-- Insert Blog Image Here -->
+      <%= image_tag(blog.image, style: "width: 100%") %>
 
       <%= content_tag(:p,  blog.body.slice(0, blog.body.length-10)<<"...", class: "cover-text") %>
       <%= link_to "Click here to jump", blog_path(blog.id) %>
