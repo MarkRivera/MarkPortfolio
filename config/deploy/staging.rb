@@ -63,7 +63,3 @@ set :deploy_to, "/var/www/mark_port_staging"
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-config.middleware.insert_before(::Rack::Runtime, "::Rack::Auth::
-Basic", "Staging") do |u, p|
-u == ENV["STAGING_USERNAME" ] && p == ENV["STAGING_PASSWORD"]
-end

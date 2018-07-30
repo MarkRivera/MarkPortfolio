@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
-set :application, "Mark's Portfolio"
-set :repo_url, "git@github.com:MarkRivera/MarkPortfolio.git",
+set :application, "MarkPortfolio"
+set :repo_url, "git@github.com:MarkRivera/MarkPortfolio.git"
 set :user, "deploy"
 set :stages, %w(production staging)
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
