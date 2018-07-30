@@ -35,6 +35,11 @@ class PagesController < ApplicationController
     redirect_to root_path
   end
 
+  # def resume
+  #   pdf = "/assets/markRiveraRubyResume.pdf"
+  #   send_file(pdf, :filename => "Mark-Rivera-Resume.pdf", :disposition => "inline", :type => "application/pdf")
+  # end
+
   private
     def project_params
       params.require(:project).permit(:title, :body, :image)
