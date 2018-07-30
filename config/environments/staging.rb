@@ -31,3 +31,4 @@ MyApp::Application.configure do
     u == 'tester' && p == 'secret'
   end
 end
+end
