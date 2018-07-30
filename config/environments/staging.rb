@@ -25,4 +25,9 @@ config.log_formatter = ::Logger::Formatter.new
 
 config.active_record.dump_schema_after_migration = false
 
+MyApp::Application.configure do
+  # RESTRICTING ACCESS TO THE STAGE ENVIRONMENT
+  config.middleware.insert_before(::Rack::Runtime, "::Rack::Auth::Basic", "Staging") do |u, p|
+    u == 'tester' && p == 'secret'
+  end
 end
